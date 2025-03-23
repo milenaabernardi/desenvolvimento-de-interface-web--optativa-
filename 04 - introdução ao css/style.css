@@ -1,0 +1,50 @@
+body{
+    background-color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+#nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 525;
+    text-indent: 10%;
+    text-transform: uppercase;
+}
+.cabeçalho {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-indent: 10%;
+}
+.titulos {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.texto1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    text-indent: 3%;
+}
+.texto2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.texto3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-indent: 16%;
+}
+.lista1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-indent: 3%;
+}
+.lista2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    text-indent: 3%;
+}

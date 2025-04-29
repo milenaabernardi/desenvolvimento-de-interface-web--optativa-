@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Box Model</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 80%;
+        margin: auto;
+      }
+      p {
+        background-color: lightgray;
+        padding: 20px 30px 10px 25px;
+      }
+      h1 {
+        background-color: coral;
+        padding: 20px 30px 10px 25px;
+        border-top-style: dashed;
+        border-top-width: 5px;
+      }
+      h2 {
+        background-color: aqua;
+        width: 200px;
+        height: 500px;
+        padding: 50px;
+        margin: auto;
+      }
+      .destaque {
+        background-color: chartreuse;
+        font-size: 24px;
+      }
+      .tamanho {
+        width: 400px;
+        height: 200px;
+      }
+
+      .p1{
+            width: 500px;
+            background-color: wheat;
+            padding: 40px;
+            box-sizing: content-box;
+        }
+        .p2{
+            width: 500px;
+            background-color: gray;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <h2>Largura e Altura</h2>
+    <p class="destaque tamanho">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

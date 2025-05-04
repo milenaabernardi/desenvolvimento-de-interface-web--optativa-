@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    background-color: black;
+    padding: 100px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.informacoes {
+    flex-grow: 1;
+}
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    background-image: url('imagens/foto\ de\ perfil.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.barra {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 325px;
+    background-image: url('imagens/purple loop.gif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.esquerda {
+    left: 0;
+    box-shadow: 5px 0 10px black;
+  }
+  
+.direita {
+    right: 0;
+    box-shadow: -5px 0 10px black;
+}
+
+#nome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4375em;
+    font-weight: 525;
+    text-indent: 10%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.cabeçalho {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    margin-left: 10%;
+    color: white;
+}
+
+.titulos {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: white;
+}
+
+.texto1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    text-align: justify;
+    text-indent: 3%;
+    color: white;
+}
+
+.texto2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    color: white;
+}
+
+.texto3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    margin-left: 16%;
+    color: white;
+}
+
+.lista1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    margin-left: 3%;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: white;
+}
+
+.lista2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8125em;
+    text-align: justify;
+    margin-left: 3%;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: white;
+}

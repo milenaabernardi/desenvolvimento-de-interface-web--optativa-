@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+header {
+    width: 100%;
+    padding: 3rem 7.5% 18rem;
+    background-image: url("imagens/background.webp");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo img {
+    height: 20px;
+}
+
+.navbar__menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.navbar__menu a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: -90px;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card__1 {
+    text-align: center;
+    position: relative;
+}
+
+.card__logo {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__title {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.card__subtitle {
+    color: #777;
+}
+
+.card__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card__btn {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card__btn:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.bookmark-btn {
+    background-color: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__section--flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card__section--flex div h2 {
+    font-size: 28px;
+    color: black;
+}
+
+.card__section--flex div p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.card__section--flex div {
+    flex: 1;
+}
+
+.card__section--flex div:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.card__bar {
+    height: 10px;
+    background-color: #777;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+
+.card__bar::before {
+    content: '';
+    display: block;
+    width: 90%; 
+    height: 100%;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.card__dsc {
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.card__stand {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card__stand__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card__stand__header h3 {
+    font-size: 18px;
+}
+
+.card__stand__header p {
+    color: hsl(176, 50%, 47%);
+    font-weight: bold;
+}
+
+.card__stand__dsc--text {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card__stand__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__stand__btns__left {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    color: #777;
+}
+
+.card__stand__btns__left p {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.card__stand__btns__btn {
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card__stand__btns__btn:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+
+.card__stand--last {
+    opacity: 0.5;
+}
+
+.card__stand--last .card__stand__btns__btn {
+    background-color: #777;
+    cursor: not-allowed;
+}

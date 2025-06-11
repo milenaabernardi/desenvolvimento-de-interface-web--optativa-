@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 100px 30px;
+  max-width: 1000px;
+  margin: auto;
+  border: 3px solid white;
+  z-index: 1;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.topo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  background-image: url('imagens/foto de perfil.jpeg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  justify-self: center;
+}
+
+.barra {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 325px;
+  background-image: url('imagens/purple loop.gif');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.esquerda {
+  left: 0;
+  box-shadow: 5px 0 10px black;
+}
+
+.direita {
+  right: 0;
+  box-shadow: -5px 0 10px black;
+}
+
+#nome {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-indent: 10%;
+}
+
+.cabeçalho {
+  font-size: 0.8125em;
+  margin-left: 10%;
+}
+
+.titulos {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.texto1, .texto2, .texto3, .lista1, .lista2 {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+.texto1 {
+  text-align: justify;
+  text-indent: 3%;
+}
+
+.texto3 {
+  margin-left: 16%;
+}
+
+.lista1, .lista2 {
+  margin-left: 3%;
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: justify;
+}
+
+hr {
+  border: 1px solid white;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  .informacoes {
+    flex: 1;
+  }
+
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+  }
+
+  #nome,
+  .cabeçalho {
+    text-align: left;
+    text-indent: 0;
+    margin-left: 0;
+  }
+
+  .texto3, .lista1, .lista2 {
+    margin-left: 0;
+  }
+
+  .barra {
+    display: none;
+  }
+
+  .container {
+    border: none;
+    padding: 30px 10px;
+  }
+}
+

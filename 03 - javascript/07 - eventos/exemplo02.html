@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <hr>
+    <h1>Delegação de Eventos</h1>
+    <div class="container">
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <button>Botão 3</button>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        const btns = document.querySelectorAll('.container button');
+        console.log(btns);
+
+        [...btns].forEach(btn => {
+            btn.addEventListener('click', function(e){
+                e.stopPropagation(); 
+                console.log('Clicou no botão:', e.target);
+            });
+        });
+
+        container.addEventListener("click", function(e) {
+            e.stopPropagation(); 
+            console.log('Clicou no container:', e.target);
+        });
+
+        container.addEventListener("click", function(e) {
+            if (e.target.nodeName === "BUTTON") {
+                console.log('Clicou em um botão (delegação):', e.target);
+            }
+        });
+    </script>
+</body>
+</html>

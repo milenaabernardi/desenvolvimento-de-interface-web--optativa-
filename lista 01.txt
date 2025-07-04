@@ -1,0 +1,110 @@
+Aluna: Milena Bernardi
+Turma B
+
+1. Operações com dois números
+let num1 = parseFloat(prompt("Digite o primeiro número:"));
+let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+if (!isNaN(num1) && !isNaN(num2)) {
+  console.log(`Soma: ${num1 + num2}`);
+  console.log(`Subtração: ${num1 - num2}`);
+  console.log(`Multiplicação: ${num1 * num2}`);
+  console.log(`Divisão: ${num2 !== 0 ? num1 / num2 : "Divisão por zero"}`);
+  console.log(`Resto: ${num2 !== 0 ? num1 % num2 : "Divisão por zero"}`);
+} else {
+  console.log("Números inválidos.");
+}
+
+2. Verificação de maioridade
+let idade = parseInt(prompt("Digite sua idade:"));
+
+if (!isNaN(idade)) {
+  console.log(idade >= 18 ? "Maior de idade." : "Menor de idade.");
+} else {
+  console.log("Idade inválida.");
+}
+
+3. Contador de 1 a N
+let n = parseInt(prompt("Digite um número inteiro positivo:"));
+
+if (n > 0) {
+  for (let i = 1; i <= n; i++) {
+    console.log(i);
+  }
+} else {
+  console.log("Número inválido.");
+}
+
+4. Soma dos números ímpares
+let numeros = [];
+for (let i = 0; i < 20; i++) {
+  numeros.push(Math.floor(Math.random() * 100));
+}
+let somaImpares = numeros.filter(n => n % 2 !== 0).reduce((a, b) => a + b, 0);
+console.log("Array:", numeros);
+console.log("Soma dos ímpares:", somaImpares);
+
+5. Cálculo do IMC
+let peso = parseFloat(prompt("Digite seu peso (kg):"));
+let altura = parseFloat(prompt("Digite sua altura (m):"));
+
+if (peso > 0 && altura > 0) {
+  let imc = peso / (altura * altura);
+  let classificacao = "";
+
+  if (imc < 18.5) classificacao = "Abaixo do peso";
+  else if (imc < 24.9) classificacao = "Peso normal";
+  else if (imc < 29.9) classificacao = "Sobrepeso";
+  else if (imc < 34.9) classificacao = "Obesidade grau I";
+  else if (imc < 39.9) classificacao = "Obesidade grau II";
+  else classificacao = "Obesidade grau III";
+
+  console.log(`IMC: ${imc.toFixed(2)} - ${classificacao}`);
+} else {
+  console.log("Dados inválidos.");
+}
+
+6. Número par ou ímpar
+let numero = parseInt(prompt("Digite um número inteiro:"));
+
+if (!isNaN(numero)) {
+  console.log(numero % 2 === 0 ? "Par" : "Ímpar");
+} else {
+  console.log("Número inválido.");
+}
+
+7. Contador regressivo
+let valor = parseInt(prompt("Digite um número para contagem regressiva:"));
+
+if (!isNaN(valor)) {
+  for (let i = valor; i >= 0; i--) {
+    console.log(i);
+  }
+} else {
+  console.log("Número inválido.");
+}
+
+8. Média de notas
+let notas = [];
+for (let i = 1; i <= 4; i++) {
+  let nota = parseFloat(prompt(`Digite a nota ${i}:`));
+  notas.push(nota);
+}
+
+let media = notas.reduce((a, b) => a + b, 0) / notas.length;
+console.log(`Média: ${media.toFixed(2)}`);
+console.log(media >= 7 ? "Aprovado" : "Reprovado");
+
+9. Maior valor de uma lista
+let lista = [];
+for (let i = 0; i < 10; i++) {
+  lista.push(Math.floor(Math.random() * 100));
+}
+let maior = Math.max(...lista);
+console.log("Lista:", lista);
+console.log("Maior número:", maior);
+
+10. Inversor de palavra
+let texto = prompt("Digite uma palavra ou frase:");
+let invertido = texto.split("").reverse().join("");
+console.log("Texto invertido:", invertido);

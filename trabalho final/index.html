@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProjectFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <nav>
+        <button>Para você</button>
+        <button>Recente</button>
+        <button>Marcado com estrela</button>
+        <button>Notificações</button>
+      </nav>
+      <div class="projetos">
+        <button class="titulo-secao">Projetos</button>
+        <button class="projeto-atual">Front-end</button>
+        <button>Visualizar todos os projetos</button>
+      </div>
+      <button>Filtros</button>
+      <button>Equipes</button>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <div class="logo">
+          <img src="assets/logo projectflow - sem fundo.png" alt="ProjectFlow" />
+        </div>
+
+        <div class="topbar-center">
+          <div class="input-icon">
+            <img src="assets/lupa.png" alt="Lupa" />
+            <input type="search" placeholder="Pesquisar" />
+          </div>
+          <button class="botao-criar">+ Criar</button>
+        </div>
+
+        <div class="icons">
+          <span><img src="assets/notificacao.png" alt="Notificações" /></span>
+          <div class="dropdown-config">
+            <img src="assets/configuracao.png" alt="Configurações" />
+            <div class="dropdown-content">
+              <button id="toggle-theme">Alternar tema</button>
+            </div>
+          </div>
+          <span><img src="assets/account.png" alt="Conta" /></span>
+        </div>
+      </header>
+
+      <section class="conteudo">
+        <div class="projeto-header">
+          <div class="projeto-titulo">
+            <h1>Front-end</h1>
+            <img src="assets/pontos.png" alt="Opções" />
+          </div>
+          <nav class="tabs">
+            <button>Resumo</button>
+            <button>Lista</button>
+            <button class="ativo">Quadro</button>
+            <button>Formulários</button>
+            <button>Cronograma</button>
+          </nav>
+        </div>
+
+        <div class="kanban-filtro">
+          <div class="kanban-filtro-container">
+            <div class="input-icon quadro-pesquisa">
+              <img src="assets/lupa.png" alt="Lupa" />
+              <input type="search" placeholder="Pesquisar quadro" />
+            </div>
+            <img class="icon-account" src="assets/account.png" alt="Conta" />
+          </div>
+        </div>
+
+        <div class="kanban">
+          <div class="coluna">
+            <h2>A Fazer <span class="contador"></span></h2>
+            <div class="card"> Informações
+              <div class="card-options">
+                <img src="assets/pontos.png" alt="Mais opções" class="options-toggle" />
+                <div class="options-menu">
+                  <button>
+                    <img src="assets/arquivar.png" alt="Arquivar" /> Arquivar
+                  </button>
+                  <button>
+                    <img src="assets/editar.png" alt="Editar" /> Editar
+                  </button>
+                  <button>
+                    <img src="assets/excluir.png" alt="Excluir" /> Excluir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="add-card">+ Criar</button>
+          </div>
+          <div class="coluna">
+            <h2>Em Andamento <span class="contador"></span></h2>
+            <div class="card"> Informações
+              <div class="card-options">
+                <img src="assets/pontos.png" alt="Mais opções" class="options-toggle" />
+                <div class="options-menu">
+                  <button>
+                    <img src="assets/arquivar.png" alt="Arquivar" /> Arquivar
+                  </button>
+                  <button>
+                    <img src="assets/editar.png" alt="Editar" /> Editar
+                  </button>
+                  <button>
+                    <img src="assets/excluir.png" alt="Excluir" /> Excluir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="add-card">+ Criar</button>
+          </div>
+          <div class="coluna">
+            <h2>Em Análise <span class="contador"></span></h2>
+            <div class="card"> Informações
+              <div class="card-options">
+                <img src="assets/pontos.png" alt="Mais opções" class="options-toggle" />
+                <div class="options-menu">
+                  <button>
+                    <img src="assets/arquivar.png" alt="Arquivar" /> Arquivar
+                  </button>
+                  <button>
+                    <img src="assets/editar.png" alt="Editar" /> Editar
+                  </button>
+                  <button>
+                    <img src="assets/excluir.png" alt="Excluir" /> Excluir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="add-card">+ Criar</button>
+          </div>
+          <div class="coluna">
+            <h2>Concluído <span class="contador"></span></h2>
+            <div class="card"> Informações
+              <div class="card-options">
+                <img src="assets/pontos.png" alt="Mais opções" class="options-toggle"/>
+                <div class="options-menu">
+                  <button>
+                    <img src="assets/arquivar.png" alt="Arquivar" /> Arquivar
+                  </button>
+                  <button>
+                    <img src="assets/editar.png" alt="Editar" /> Editar
+                  </button>
+                  <button>
+                    <img src="assets/excluir.png" alt="Excluir" /> Excluir
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="add-card">+ Criar</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
